@@ -25,7 +25,7 @@ function openNote(noteID) {
 }
 
 function deleteNote(noteID) {
-    fetch("https://bjw-notes-api.herokuapp.com/deleteNote/" + noteID);
+    fetch("https://fauna-notes-api.herokuapp.com/deleteNote/" + noteID);
     $("#" + noteID).addClass("fadeout");
     setTimeout(function () {
         $("#" + noteID).remove();
