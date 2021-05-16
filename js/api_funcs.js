@@ -25,6 +25,7 @@ function openNote(noteID) {
 }
 
 function deleteNote(noteID) {
+    console.log(`Deleting note id ${noteID}`)
     fetch("https://fauna-notes-api.herokuapp.com/deleteNote/" + noteID, { method: "DELETE" });
     $("#" + noteID).addClass("fadeout");
     setTimeout(function () {
