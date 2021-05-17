@@ -48,8 +48,8 @@ function noteToHTML(n) {
                 </div>
                 
                 <div class="options">
-                    <img onclick="deleteNote(` + n.noteID + `)" src="icons/delete.png">
-                    <img onclick="openNote(` + n.noteID + `)" class="open" src="icons/open.png">
+                    <img onclick="deleteNote("` + n.noteID + `")" src="icons/delete.png">
+                    <img onclick="openNote("` + n.noteID + `")" class="open" src="icons/open.png">
                 </div>
             </div>`);
 
